@@ -12,6 +12,7 @@ const Blog = (props: BlogPropTypes) => {
   return(
     <div>
       <h1>Blog</h1>
+      <h2>{process.env.APP_NAME}</h2>
       {posts.map((post, index) => (
         <div key={index}>
           <h3>{post.title}</h3>
